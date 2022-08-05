@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai&display=swap");
+.nft_card {
+  background-color: hsl(216deg, 50%, 16%);
+  color: hsl(0deg, 0%, 100%);
+}
+.nft_card .nft_img {
+  width: 100%;
+}
+.nft_card .nft_value {
+  color: hsl(178deg, 100%, 50%);
+}
+
+body {
+  font-size: 18px;
+  font-family: "Almarai";
+  background-color: hsl(217deg, 54%, 11%);
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */
