@@ -1,12 +1,47 @@
-.nft_card
-
-
-    background-color: $card_bg_DB
-    color: $white
-
-
-    .nft_img
+.card_container
+    height: 100vh
+    align-self: center
+    .eye_icon
+        
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        display: none
+        z-index: 3
+    .filter
+        background-color: $cyan
+        height: 100%
         width: 100%
+        position: absolute
+        opacity: 0.5
+        top: 0
+        display: none
+
+    .nft_card
+        background-color: $card_bg_DB
+        color: $white
+        transform: scale(0.8)
+
+
+        .nft_img
+            width: 100%
+
+        .eq-p
+            color: $soft_blue
+    .days_left
+        color: $soft_blue
     .nft_value
         color: $cyan
-        
+        font-size: 0.9rem
+    .nft_autor
+        color: $white
+    .creation_p
+        color: $soft_blue
+    &:active .nft_title, &:active .nft_autor
+        color: $cyan
+
+    &:active .eye_icon, &:active .filter
+        display: block
+
+            

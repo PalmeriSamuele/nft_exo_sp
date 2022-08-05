@@ -1,21 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Almarai&display=swap");
-.nft_card {
+.card_container {
+  height: 100vh;
+  align-self: center;
+}
+.card_container .eye_icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 3;
+}
+.card_container .filter {
+  background-color: hsl(178deg, 100%, 50%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.5;
+  top: 0;
+  display: none;
+}
+.card_container .nft_card {
   background-color: hsl(216deg, 50%, 16%);
   color: hsl(0deg, 0%, 100%);
+  transform: scale(0.8);
 }
-.nft_card .nft_img {
+.card_container .nft_card .nft_img {
   width: 100%;
 }
-.nft_card .nft_value {
+.card_container .nft_card .eq-p {
+  color: hsl(215deg, 51%, 70%);
+}
+.card_container .days_left {
+  color: hsl(215deg, 51%, 70%);
+}
+.card_container .nft_value {
   color: hsl(178deg, 100%, 50%);
+  font-size: 0.9rem;
+}
+.card_container .nft_autor {
+  color: hsl(0deg, 0%, 100%);
+}
+.card_container .creation_p {
+  color: hsl(215deg, 51%, 70%);
+}
+.card_container:active .nft_title, .card_container:active .nft_autor {
+  color: hsl(178deg, 100%, 50%);
+}
+.card_container:active .eye_icon, .card_container:active .filter {
+  display: block;
 }
 
 body {
-  font-size: 18px;
+  height: 100%;
   font-family: "Almarai";
   background-color: hsl(217deg, 54%, 11%);
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+body p {
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
