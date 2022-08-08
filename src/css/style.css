@@ -31,6 +31,9 @@
 .card_container .nft_card .eq-p {
   color: hsl(215deg, 51%, 70%);
 }
+.card_container .nft_card .avatar_box {
+  border-color: hsl(215deg, 32%, 27%);
+}
 .card_container .days_left {
   color: hsl(215deg, 51%, 70%);
 }
@@ -43,9 +46,6 @@
 }
 .card_container .creation_p {
   color: hsl(215deg, 51%, 70%);
-}
-.card_container:active .nft_title, .card_container:active .nft_autor {
-  color: hsl(178deg, 100%, 50%);
 }
 .card_container:active .eye_icon, .card_container:active .filter {
   display: block;
