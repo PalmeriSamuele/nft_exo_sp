@@ -3,8 +3,6 @@
 import NFT_card from './components/Nft_card';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-
-
 function App() {
   return (
     <div className='card_container d-flex justify-content-center align-items-center'>
